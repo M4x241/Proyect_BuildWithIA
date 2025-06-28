@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streaming de Cámaras</title>
+    <style>
+        body {
+            background: #181c20;
+            color: #e0e5ea;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0 10px 0;
+            background: #23272b;
+            border-bottom: 4px solid #0078d7;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 90px;
+            height: 90px;
+            background: #0078d7;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #0078d7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo svg {
+            width: 60px;
+            height: 60px;
+            fill: #fff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        .grid-cameras {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #23272b;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+        }
+        .camera-box {
+            background: #1a1e22;
+            border: 2px solid #0078d7;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 1px 6px rgba(0,120,215,0.15);
+        }
+        .camera-box h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #0078d7;
+            letter-spacing: 1px;
+        }
+        .camera-box img {
+            border-radius: 4px;
+            border: 1px solid #333;
+            background: #111;
+            box-shadow: 0 0 8px #0078d7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <svg viewBox="0 0 64 64">
+                <path d="M32 4l24 8v16c0 16-12 28-24 32C20 56 8 44 8 28V12z"/>
+                <path d="M32 8l20 6.7V28c0 14-10.5 25-20 28C22.5 53 12 42 12 28V14.7z" fill="#0078d7"/>
+            </svg>
+        </div>
+        <h1>Aguila Vigilante</h1>
+    </div>
+    <div class="grid-cameras">
+        <div class="camera-box">
+            <h2>Cámara 1</h2>
+            <img src="/video_feed/cam1" width="100%" />
+        </div>
+        <div class="camera-box">
+            <h2>Cámara 2</h2>
+            <img src="/video_feed/cam2" width="100%" />
+        </div>
+        <div class="camera-box">
+            <h2>Cámara 3</h2>
+            <img src="/video_feed/cam3" width="100%" />
+        </div>
+        <div class="camera-box">
+            <h2>Cámara 4</h2>
+            <img src="/video_feed/cam4" width="100%" />
+        </div>
+    </div>
+</body>
+</html>
