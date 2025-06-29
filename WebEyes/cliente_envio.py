@@ -7,7 +7,7 @@ import gc
 ip_webcam_url = "http://10.55.131.39:8080/video"
 
 # Dirección de tu servidor FastAPI
-fastapi_url = "http://192.168.51.166:8000/upload/cam1"  # Ajusta esta IP
+fastapi_url = "http://localhost:8000/upload/cam1"  # Ajusta esta IP
 
 def main():
     cap = cv2.VideoCapture(ip_webcam_url)
